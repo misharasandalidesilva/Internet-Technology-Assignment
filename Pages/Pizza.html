@@ -10,28 +10,25 @@
 <body>
 
    <section>
-   <div style="background-color: darkgray;">
-   <h1><b><p style="text-align: center; font-style: italic;">Pizza Recipe</p></b></h1>
-   </div>
-
-    <p><b><span style="color: darkslategrey;">
+   <div class="main-content">
+   <h1>Pizza Recipe</h1>
+  
+    <p class="text">
          Pizza, a beloved dish originating from Naples, Italy, consists of a round or rectangular dough base topped with tomato sauce, cheese, and various toppings. 
          It evolved from ancient flatbreads and has become a global favorite, celebrated for its versatility and endless variations.
-         From the classic Margherita to creative specialty pizzas, it brings people together and offers a delicious canvas for culinary creativity.
-        </b></span>   
+         From the classic Margherita to creative specialty pizzas, it brings people together and offers a delicious canvas for culinary creativity.  
     </p>
 
-    <!-- <header>
-        <nav>
-            <ul>
-                <li><a href="/Pages/Pizza.html">Chicken Pizza</a></li>
-                <li><a href="/Pages/Pizza.html">Pepperoni Pizza</a></li>
-            </ul>
-        </nav>
-    </header> -->
-    <!-- </div> -->
+    <div class="sub-content">
+        <ul>
+            <li><a href="#recipe-container-1">Chicken Pizza</a></li>
+            <li><a href="#recipe-container-2">Pepperoni Pizza</a></li>
+        </ul>
+    </div>
+</div>
+    
 
-    <div class="recipe-container">
+    <div id="recipe-container-1">
     <h2>Chicken Pizza</h2>
     <img 
          src="https://www.allrecipes.com/thmb/ee0daLeNNIUcrKbm5nxwFXheMDM=/0x512/filters:no_upscale():max_bytes(150000):strip_icc()/AR-24878-bbq-chicken-pizza-beauty-4x3-39cd80585ad04941914dca4bd82eae3d.jpg"
@@ -45,7 +42,7 @@
     </div>
 
    <div class="ingrediants">
-    <div class="recipe-container">
+    <div id="recipe-container-1">
          <h2><u>Ingredients of Chicken Pizza</u></h2>
              <b>For the Dough</b>
                  <ul>
@@ -83,7 +80,7 @@
         </div>
                 </br>
                 <div class="nstructions">
-                <div class="recipe-container">
+                <div id="recipe-container-1">
                 <p>
                     <h2><u>Instructions</u></h2>
                         
@@ -155,13 +152,13 @@
                 </div>
                     <br> <br>
 
-                    <div>
+                    <div class="video-container">
                         <iframe
+                            width="800" height="500" 
                             src="https://www.youtube.com/embed/z6CmFx32k34" 
                             title="Chicken Pizza Recipe | The Best Homemade Pizza You&#39;ll Ever Eat | Hira Bakes" 
                             frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
-                            width="800"; height="500">
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
                         </iframe>
                     </div>
         </section>  
@@ -169,7 +166,7 @@
     <br> <br>
     <hr>
     <section>
-        <div class="recipe-container">
+        <div id="recipe-container-2">
             <h2>Pepperoni Pizza</h2>
             <img 
             src="https://i.pinimg.com/originals/9f/07/ca/9f07ca45829cd07b6fee2c9506822496.jpg"
@@ -178,7 +175,7 @@
         </div>
 
         <div class="ingrediants">
-            <div class="recipe-container">
+            <div id="recipe-container-2">
           <h2><u>Ingredients of Pepperoni Pizza</u></h2>
           <b>For the Dough</b>
               <ul>
@@ -211,8 +208,8 @@
     </div>
 
 </br>
-<div class="nstructions">
-    <div class="recipe-container">
+<div class="Instructions">
+    <div id="recipe-container-2">
 <p>
     <h2><u>Instructions</u></h2>
         
@@ -300,9 +297,9 @@
        style="width: 400px; height: 400px; object-fit: cover" 
        alt="Pepperoni Pizza images">  -->
 
-       <div>
+       <div class="video-container">
         <iframe 
-           width="678" height="391" 
+           width="800" height="500" 
            src="https://www.youtube.com/embed/4hjX22aFmN8" 
            title="Pepperoni Pizza" 
            frameborder="0" 
