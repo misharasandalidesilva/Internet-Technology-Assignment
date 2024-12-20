@@ -42,27 +42,61 @@ header {
   justify-content: space-between;
 }
 
-nav ul li {
-  list-style: none;
-  display: inline;
-  margin-right: 20px;
-  font-weight: 550;
-  text-decoration: none;
-}
-
-.nav-list a{
+.navbar a{ 
   position: relative;
   display: inline-block;
-  font-size: 15px;
+  font-size: 17px;
   color: white;
   text-decoration: none;
   font-weight: 400;
-  margin: 0 15px;
-    transition: color 0.5s ease;
+  margin: 0 20px;
+  transition: color 0.5s ease;
 }
 
-.nav-list a:hover {
+.navbar a:hover{
   color: rgb(255, 255, 0);
+}
+
+.menu{
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  background: white;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #333;
+  overflow-x: hidden;
+  transition: 0.3s;
+  padding-top: 60px;
+  color: white;
+  z-index: 1000;
+}
+
+.sidebar a {
+  padding: 8px 16px;
+  text-decoration: none;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  background-color: #575757;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 36px;
 }
 
 .logo {
@@ -327,6 +361,20 @@ footer {
     width: 100%;
     margin-bottom: 10px;
   }
+
+  .navbar a{
+    display: none;
+}
+
+.menu {
+    display: block;
+    color: rgb(255, 255, 0);
+    background: black;
+    /* margin-left: 243px; */
+}
+#sidebar>a{
+    color: rgb(255, 255, 0);
+}
 }
 
 
@@ -342,6 +390,20 @@ footer {
   .recipe-section{
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
+
+  .navbar a{
+    display: none;
+}
+
+.menu {
+    display: block;
+    color: rgb(255, 255, 0);
+    background: black;
+    /* margin-left: 243px; */
+}
+#sidebar>a{
+    color: rgb(255, 255, 0);
+}
 }
 
 
@@ -376,6 +438,20 @@ footer {
     font-size: 1rem;
     padding: 10px 30px;
   }
+
+  .navbar a{
+    display: none;
+}
+
+.menu {
+    display: block;
+    color: rgb(255, 255, 0);
+    background: black;
+    /* margin-left: 243px; */
+}
+#sidebar>a{
+    color: rgb(255, 255, 0);
+}
 }
 
 @media (min-width: 426px) and (max-width: 768px) {
@@ -412,12 +488,20 @@ footer {
     padding: 10px;
   }
 
-  .burger {
+  .navbar a{
+    display: none;
+}
+
+.menu {
     display: block;
-  }
-  .menu-panel.active {
-    right: 0;
-  }
+    color: rgb(255, 255, 0);
+    background: black;
+    /* margin-left: 688px;
+    margin-top: -31px; */
+}
+#sidebar>a{
+    color: rgb(255, 255, 0);
+}
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
